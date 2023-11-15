@@ -6,15 +6,18 @@ const Header = ({setSelection})=> {
   return (
     <header className='sticky top-0 w-full border-b-4 bg-slate-200'>
       <div className='flex justify-evenly'>
-        <button className='h-8' onClick={()=>{setSelection('/')}}>
+        <a className='h-8' href='#'>
           Home
-        </button>
-        <button className='h-8' onClick={()=>{setSelection('projects')}}>
+        </a>
+        <a className='h-8' href='#projects'>
           Projects
-        </button>
-        <button className='h-8' onClick={()=>{setSelection('aboutme')}}>
+        </a>
+        <a className='h-8' href='#aboutme'>
           About Me
-        </button>
+        </a>
+        <a className='h-8' href='#contact'>
+          Contact
+        </a>
       </div>
     </header>
   )

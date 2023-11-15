@@ -37,21 +37,21 @@ const ProjectsPage = ()=> {
   }
 
   return (
-    <>
-    <div className='project-browser left-side'>
+    <section className='border-2 flex w-full' id='projects'>
+    <div className='w-1/3'>
       <ProjectCard project={ProjectArray['anthems']} select={()=>selectProject('anthems')}/>
       <ProjectCard project={ProjectArray['chronicles']} select={()=>{selectProject('chronicles')}}/>
       <ProjectCard project={ProjectArray['hyperloom']} select={()=>{selectProject('hyperloom')}}/>
     </div>
-    <section className='focus-window right-side'>
+    <section className='w-2/3'>
       {!selectedProject ? <h1>Please choose a project on the left for details!</h1> : 
       <Image src={`${ProjectArray[selectedProject]['previewImg']}`} 
       alt={selectedProject} 
-      className='preview-image'>
+      className=''>
       </Image>}
       {selectedProject && <ProjectDetails project={ProjectArray[selectedProject]}/>}
     </section>
-    </>
+    </section>
   )
 }
 

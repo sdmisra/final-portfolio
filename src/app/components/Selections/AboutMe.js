@@ -2,8 +2,8 @@ import React from 'react'
 
 const AboutMe = () => {
   return (
-    <>
-    <div className='author-info left-side'> 
+    <section className='flex w-full border-2'>
+    <div className id='aboutme'> 
     <section className='diatribe-wrapper'>
       <p className='about-paragraph'>
       Though it has long been a dream of mine to go into software development, it took me a little while to truly chase after that dream in earnest. This portfolio represents the earliest iterations of my skillset in many ways, yet I am quite proud of my work so far and it is a joy to share it.
@@ -21,7 +21,7 @@ const AboutMe = () => {
     <div className='timeline right-side'>
     This is a slideshow or something!
     </div>
-    </>
+    </section>
   )
 }
 
