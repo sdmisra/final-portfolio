@@ -6,7 +6,7 @@ const Header = ({setSelection})=> {
   return (
     <header className='sticky top-0 w-full border-b-4 bg-slate-200'>
       <div className='flex justify-evenly'>
-        <a className='h-8' href='#'>
+        <a className='h-8' href='#welcome'>
           Home
         </a>
         <a className='h-8' href='#projects'>

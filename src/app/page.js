@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
     <Header setSelection={(value)=>{setSelection(value)}}/>
-    <main className='flex justify-center flex-col items-center h-2/3'>
+    <main className='flex justify-center flex-col items-center h-[92vh]'>
     <Dashboard selection={selection}/>
     <Footer />
     </main>

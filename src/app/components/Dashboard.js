@@ -8,7 +8,7 @@ const Dashboard = ({selection}) => {
   console.log(selection);
 
   return (
-    <section className='flex flex-col justify-center items-center bg-scroll h-full w-full border-2 bg-slate-400/75 p-20 pb-10 overflow-y-scroll'>
+    <section className='flex flex-col bg-scroll border-2 overflow-y-scroll'>
       <Welcome/>
       <AboutMe />
       <ProjectsPage/>
