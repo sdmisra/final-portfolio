@@ -8,7 +8,7 @@ const Dashboard = () => {
 
 
   return (
-    <section className='flex -z4 absolute inset-0 justify-center items-center'>
+    <section className='flex -z4 absolute inset-0 justify-center items-center bg-scroll w-full'>
       This is the main content wrapper
     </section>
   )

@@ -8,10 +8,10 @@ const HeroImage = () => {
         src={treeline}
         loading='lazy'
         style={{objectFit:'cover'}}
-        fill={false}
+        fill={true}
         quality={100}
         alt='a misty treeline'
-        className="-z-10"
+        className="absolute -z-10"
     />
   )
 }
