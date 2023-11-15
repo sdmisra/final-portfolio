@@ -6,8 +6,6 @@ import {useState, useEffect} from 'react'
 
 export default function Home() {
   const [selection, setSelection] = useState('#')
-  console.log('ln 9, page.js', selection)
-
   useEffect(()=> {
 
   }, [])

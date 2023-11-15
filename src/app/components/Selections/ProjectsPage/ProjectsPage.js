@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard'
 import ProjectDetails  from './ProjectDetails'
 import { useState } from 'react'
 import ProjectArray  from '@/app/assets/projectArray'
+import { motion } from 'framer-motion';
 
 const ProjectsPage = ()=> {
   const [selectedProject, setSelectedProject] = useState(null)
@@ -14,7 +15,14 @@ const ProjectsPage = ()=> {
   }
 
   return (
-    <section className='border-2 flex flex-col justify-center  h-auto w-full bg-slate-500/50 my-12 py-6' id='projects'>
+    <motion.section className='flex flex-col justify-center  h-auto w-full bg-slate-700/25 my-12 py-6 backdrop-blur-sm rounded' id='projects'
+    initial={{opacity:0, "border-bottom-width": "0px" }}
+    whileInView={{opacity: 1}}
+    transition={{
+      delay: 1,
+      type: 'tween',
+      duration: 3
+    }}>
     <div className='flex justify-evenly w-full'>
       <ProjectCard project={projects['anthems']} select={()=>selectProject('anthems')}/>
       <ProjectCard project={projects['chronicles']} select={()=>{selectProject('chronicles')}}/>
@@ -29,7 +37,7 @@ const ProjectsPage = ()=> {
       </Image>}
       {selectedProject && <ProjectDetails project={projects[selectedProject]}/>}
     </section>
-    </section>
+    </motion.section>
   )
 }
 

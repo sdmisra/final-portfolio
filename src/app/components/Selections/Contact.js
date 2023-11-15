@@ -1,10 +1,12 @@
+import { motion } from 'framer-motion'
+
 const Contact = () => {
   return (
-    <section className='border-2 h-auto flex w-full justify-center bg-slate-500/50 my-12 py-6'>
+    <motion.section className='h-auto flex w-full justify-center bg-slate-700/25 my-12 py-6 rounded'>
       <h1 id='contact'>
         This is my contact info, lets make something!
       </h1>
-    </section>
+    </motion.section>
   )
 }
 

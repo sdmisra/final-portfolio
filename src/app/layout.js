@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <HeroImage />
         {children}
-        </body>
+      </body>
     </html>
   )
 }
