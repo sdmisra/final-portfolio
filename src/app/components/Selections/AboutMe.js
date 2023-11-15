@@ -18,7 +18,7 @@ const AboutMe = () => {
       <span> GitHub and LinkedIn Icons here</span>
     </div>
     <div className='flex justify-center w-2/5 border-2'>
-    This is a slideshow or something!
+    This is a carousel of testimonials from LinkedIn
     </div>
     </section>
   )
