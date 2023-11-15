@@ -1,15 +1,14 @@
 'use client'
+import AboutMe from "./Selections/AboutMe";
+import ProjectsPage from "./Selections/ProjectsPage/ProjectsPage";
 
-import React, {useState} from 'react'
-import Image from 'next/image'
-
-const Dashboard = () => {
-  const [selection, setSelection] = useState('');
-
+const Dashboard = ({selection}) => {
+  console.log(selection);
 
   return (
-    <section className='flex -z4 absolute inset-0 justify-center items-center bg-scroll w-full'>
-      This is the main content wrapper
+    <section className='flex flex-col justify-center items-center bg-scroll h-full w-3/4 border-2 bg-slate-400/75 overflow-y-scroll'>
+      <AboutMe />
+      <ProjectsPage/>
     </section>
   )
 }
