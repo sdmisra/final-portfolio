@@ -1,30 +1,38 @@
 'use client'
 import React from 'react'
+import { usePathname } from 'next/navigation'
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-const Header = ({setSelection})=> {
+const Header = ()=> {
+  const pathname = usePathname();
+
+  useEffect(()=> {
+    console.log(pathname)
+  })
+
   return (
     <motion.header 
-    className='sticky top-0 w-full border-b-4 bg-slate-200'
-    initial={{opacity:0, "border-bottom-width": "0px" }}
+    className='sticky top-0 w-full bg-slate-300/25'
+    initial={{opacity:0}}
     whileInView={{opacity: 1}}
     transition={{
       delay: 1,
       type: 'tween',
-      duration: 3
+      duration: 7
     }}
     >
-      <div className='flex justify-evenly pt-2'>
-        <a className='h-8' href='#welcome' >
+      <div className='flex justify-evenly pt-2 '>
+        <a className='h-8 ' href='#welcome' >
           Home
         </a>
-        <a className='h-8' href='#aboutme' >
+        <a className='h-8 ' href='#aboutme' >
           About Me
         </a>
-        <a className='h-8' href='#projects' >
+        <a className='h-8 ' href='#projects' >
           Projects
         </a>
-        <a className='h-8' href='#contact' >
+        <a className='h-8 ' href='#contact' >
           Contact
         </a>
       </div>

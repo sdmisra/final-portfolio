@@ -4,7 +4,7 @@ import Contact from "./Selections/Contact"
 import Welcome from './Selections/Welcome'
 // import { motion } from "framer-motion";
 
-const Dashboard = ({selection}) => {
+const Dashboard = () => {
 
   return (
     <section className='flex flex-col bg-scroll border-2 overflow-y-scroll'>
