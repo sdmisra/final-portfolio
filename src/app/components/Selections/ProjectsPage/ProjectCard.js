@@ -4,7 +4,7 @@ export const ProjectCard = (props) => {
 
   
   return (
-    <section className='project-card' onClick={()=>selectCard()}>
+    <section className='drop-shadow-md p-2 rounded bg-slate-100/50 mb-4 cursor-pointer' onClick={()=>selectCard()}>
       <div className='card-left'>
       <h2 className='card-text'>{title}</h2>
       <h3 className='card-text'>Team Size: {size}</h3>

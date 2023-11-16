@@ -18,11 +18,11 @@ const Header = ({setSelection})=> {
         <a className='h-8' href='#welcome' >
           Home
         </a>
-        <a className='h-8' href='#projects' >
-          Projects
-        </a>
         <a className='h-8' href='#aboutme' >
           About Me
+        </a>
+        <a className='h-8' href='#projects' >
+          Projects
         </a>
         <a className='h-8' href='#contact' >
           Contact

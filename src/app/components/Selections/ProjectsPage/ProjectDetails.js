@@ -1,6 +1,5 @@
 import 'devicon';
 
-
 const ProjectDetails = ({project}) => {
   const {tech, abstract} = project
 
