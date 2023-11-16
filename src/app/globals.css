@@ -7,3 +7,22 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+::-webkit-scrollbar {
+  width: .85rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border: .15rem rgb(20, 82, 45, .25) solid;
+  border-radius: .15rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(20, 82, 45, .35);
+  border-radius: .15rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(4, 119, 86, .4)
+}

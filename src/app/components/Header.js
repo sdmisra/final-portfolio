@@ -13,7 +13,7 @@ const Header = ()=> {
 
   return (
     <motion.header 
-    className='sticky top-0 w-full bg-slate-300/25'
+    className='sticky top-0 w-full bg-slate-300/25 border-b-2 border-emerald-900/25'
     initial={{opacity:0}}
     whileInView={{opacity: 1}}
     transition={{
