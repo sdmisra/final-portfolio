@@ -19,7 +19,7 @@ const ProjectsPage = ()=> {
 
   return (
     <section className=" flex justify-center my-40">
-    <motion.section className='flex flex-col justify-center items-center  h-auto w-4/5 bg-slate-700/50 my-12 py-6 backdrop-blur-sm rounded drop-shadow-md' id='projects'
+    <motion.section className='flex flex-col justify-center items-center  h-auto w-4/5 bg-slate-700/50 my-12 py-6 backdrop-blur-sm rounded drop-shadow-sm' id='projects'
     initial={{opacity:0 }}
     whileInView={{opacity: 1, border: '1px slategrey solid'}}
     transition={{
