@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const AboutMe = () => {
   return (
-    <section className="my-40">
+    <section className="my-40 pt-8">
     <motion.section className='flex justify-between bg-slate-700/50 my-12 w-2/3 py-6 backdrop-blur-sm p-6 rounded ml-12 drop-shadow'
     initial={{opacity:0 }}
     whileInView={{opacity: 1, border: '1px slategrey solid'}}
@@ -58,7 +58,7 @@ const AboutMe = () => {
     <motion.div 
     className='flex justify-center w-2/5 border-b-2 border-slate-200 border-double'
     initial={{ opacity: 0, x: 150 }}
-    animate={{ opacity: 1, x: 0, }}
+    whileInView={{ opacity: 1, x: 0, }}
     transition={{ delay: 12, duration: 3 }}>
     Kind words from my previous teams:
     </motion.div>
