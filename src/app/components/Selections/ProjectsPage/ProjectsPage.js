@@ -11,7 +11,7 @@ const ProjectsPage = ()=> {
   const projects = ProjectArray
 
   const selectProject = (project) => {
-    setSelectedProject(project);
+    selectedProject === project ? setSelectedProject(null) : setSelectedProject(project);
   }
 
   useEffect(()=> {
