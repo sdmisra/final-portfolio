@@ -21,7 +21,7 @@ const AboutMe = () => {
       I find I thrive in collaborative environments in which I can ask questions, reach out for perspective and context, and learn from every mistake to grow steadily.
       </p>
       <p className='m-2 bg-slate-200/75 rounded p-2'>
-      Please don't hestitate to reach out if you are looking for a software developer for projects and opportunities large or small. 
+      Please do not hestitate to reach out if you are looking for a software developer for projects and opportunities large or small. 
       </p>
       <span className="w-full flex justify-center">
         <Link href="https://www.linkedin.com/in/shanemisra/" target="_blank" rel="noreferrer noopener" className="text-6xl">
