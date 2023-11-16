@@ -14,7 +14,7 @@ const Contact = () => {
       <a href="mailto:shane.misra@gmail.com" className="flex flex-col items-center">
         <Image src={icon} alt='email button'/>
         <span className="bg-slate-200 rounded p-2">
-        Send me an Email!
+        Send me an email!
         </span>
       </a>
     </div>
