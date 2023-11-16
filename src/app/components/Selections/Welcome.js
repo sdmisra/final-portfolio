@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Welcome = () => {
   return (
-    <section className="flex justify-center">
+    <section className="flex justify-center w-full">
     <motion.section 
     className='flex justify-evenly bg-slate-700/25 w-2/3 py-12 px-2 my-12 backdrop-blur-sm rounded drop-shadow-md' 
     id='welcome'

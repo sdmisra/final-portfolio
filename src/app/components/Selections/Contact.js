@@ -5,6 +5,7 @@ import icon from '/public/emailicon.png'
 
 const Contact = () => {
   return (
+    <section className="mt-40">
     <motion.section 
     className='h-auto flex w-full justify-center my-12 py-6 rounded drop-shadow-md'
     >
@@ -20,6 +21,7 @@ const Contact = () => {
       </a>
     </div>
     </motion.section>
+    </section>
   )
 }
 
