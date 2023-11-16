@@ -1,9 +1,8 @@
-'use client'
 import AboutMe from "./Selections/AboutMe";
 import ProjectsPage from "./Selections/ProjectsPage/ProjectsPage";
 import Contact from "./Selections/Contact"
 import Welcome from './Selections/Welcome'
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const Dashboard = ({selection}) => {
 

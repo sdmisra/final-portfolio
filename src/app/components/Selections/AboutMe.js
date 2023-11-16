@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import 'devicon';
 import {motion} from 'framer-motion';

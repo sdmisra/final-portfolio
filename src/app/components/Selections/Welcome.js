@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import profile from '/public/ShaneProfile.jpg';
 import { motion } from 'framer-motion';
