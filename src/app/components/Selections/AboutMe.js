@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import 'devicon';
 import {motion} from 'framer-motion';
@@ -9,13 +10,13 @@ const AboutMe = () => {
     initial={{opacity:0 }}
     whileInView={{opacity: 1, border: '1px slategrey solid'}}
     transition={{
-      delay: 1.15,
+      delay: 3,
       type: 'tween',
       duration: 3
     }}>
     <div className='h-auto w-3/5' id='aboutme'>
       <p className='m-2 bg-slate-200/75 rounded p-2'>
-      Most recently, my career centered around speciality cheeses in a high volume retail setting. While challenging work throughout the holidays and the COVID19 pandemic particularly, I find those experiences have helped me to anticipate the needs of the end user of my software in very practical ways.
+      Most recently, my career centered around speciality cheeses in a high volume retail setting. It was challenging work throughout the holidays and the COVID19 pandemic particularly, but I find those experiences have helped me to anticipate the needs of the end user of my software in very practical ways.
       </p>
       <p className='m-2 bg-slate-200/75 rounded p-2'>
       I find I thrive in collaborative environments in which I can ask questions, reach out for perspective and context, and learn from every mistake to grow steadily.
