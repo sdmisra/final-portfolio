@@ -23,9 +23,9 @@ const ProjectsPage = ()=> {
     initial={{opacity:0 }}
     whileInView={{opacity: 1, border: '1px slategrey solid'}}
     transition={{
-      delay: 1,
+      delay: .75,
       type: 'tween',
-      duration: 3
+      duration: 2
     }}>
     <div className='flex justify-evenly w-full'>
       <ProjectCard project={projects['anthems']} select={()=>selectProject('anthems')}/>
