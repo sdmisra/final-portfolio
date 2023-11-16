@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 
 const Welcome = () => {
   return (
-    <section className="flex justify-center h-auto">
+    <section className="flex justify-center">
     <motion.section 
-    className='flex justify-evenly bg-slate-700/25 h-full w-2/4 py-12 px-2 mt-8 backdrop-blur-sm rounded drop-shadow-md' 
+    className='flex justify-evenly bg-slate-700/25 w-2/3 py-12 px-2 mt-8 backdrop-blur-sm rounded drop-shadow-md' 
     id='welcome'
     initial={{opacity:0}}
     whileInView={{opacity: 1, border: '1px slategrey solid'}}
