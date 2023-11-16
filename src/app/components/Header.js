@@ -1,32 +1,34 @@
 'use client'
 import React from 'react'
-import {usePathname} from 'next/navigation'
-import Link from 'next/link'
+import { motion } from 'framer-motion';
 
-const Header = ()=> {
-  const pathname = usePathname();
-  console.log(pathname)
-
+const Header = ({setSelection})=> {
   return (
-    <header className='sticky top-0 w-full'>
-      <div className='flex justify-evenly'>
-        <button className='nav-button'>
-          <Link href='/' className='link'>
-            Home
-          </Link>
-        </button>
-        <button className='nav-button'>
-          <Link href='/projects' className='link'>
-            Projects
-          </Link>
-        </button>
-        <button className='nav-button'>
-          <Link href='/aboutme' className='link'>
-            About Me
-          </Link>
-        </button>
+    <motion.header 
+    className='sticky top-0 w-full border-b-4 bg-slate-200'
+    initial={{opacity:0, "border-bottom-width": "0px" }}
+    whileInView={{opacity: 1}}
+    transition={{
+      delay: 1,
+      type: 'tween',
+      duration: 3
+    }}
+    >
+      <div className='flex justify-evenly pt-2'>
+        <a className='h-8' href='#welcome' >
+          Home
+        </a>
+        <a className='h-8' href='#aboutme' >
+          About Me
+        </a>
+        <a className='h-8' href='#projects' >
+          Projects
+        </a>
+        <a className='h-8' href='#contact' >
+          Contact
+        </a>
       </div>
-    </header>
+    </motion.header>
   )
 }
 
