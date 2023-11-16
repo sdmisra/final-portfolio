@@ -34,7 +34,7 @@ const ProjectsPage = ()=> {
     </div>
       {!selectedProject ? <h1 className="border-2 bg-slate-400/50 border-slate-100/25 rounded drop-shadow p-2 mt-6">Please choose a project above for details!</h1> : 
     <motion.section 
-      className='flex flex-col items-center w-full max-h-[1500px]'
+      className='flex flex-col items-center w-full max-h-[1200px]'
       initial={{ opacity: 0, y: 50}}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 2, duration: 2 }}
@@ -43,7 +43,7 @@ const ProjectsPage = ()=> {
       src={projects[selectedProject].previewImg} 
       alt={selectedProject} 
       className='w-2/3 aspect-video rounded mb-4'
-      quality={60}>
+      quality={20}>
       </Image>
       </motion.section>}
       {selectedProject && <ProjectDetails project={projects[selectedProject]}/>}
