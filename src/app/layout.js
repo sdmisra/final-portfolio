@@ -5,7 +5,6 @@ import './globals.css'
 const nunito = Nunito({
   subsets: ["latin-ext"],
   display: 'swap',
-  variable: '--font-poppins',
 });
 
 
@@ -16,8 +15,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={nunito.className}>
+    <html lang="en" style={{scrollBehavior:'smooth'}}>
+      <body className={`${nunito.className}`}>
         <HeroImage />
         {children}
       </body>
