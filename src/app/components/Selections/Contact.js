@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import icon from '/public/emailicon.png'
+import Footer from '../Footer'
 
 const Contact = () => {
   return (
@@ -25,6 +26,7 @@ const Contact = () => {
       </motion.a>
     </div>
     </motion.section>
+    <Footer />
     </section>
   )
 }
