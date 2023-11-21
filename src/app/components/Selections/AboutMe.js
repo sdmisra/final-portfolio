@@ -5,6 +5,7 @@ import {motion} from 'framer-motion';
 import Link from 'next/link'
 
 const AboutMe = () => {
+
   return (
     <section className="my-40 pt-8">
     <motion.section className='flex justify-between bg-slate-700/50 my-12 w-2/3 py-6 backdrop-blur-sm p-6 rounded ml-12 drop-shadow'
@@ -15,7 +16,7 @@ const AboutMe = () => {
       type: 'tween',
       duration: 2
     }}>
-    <div className='h-auto w-3/5' id='aboutme'>
+    <div className='h-auto w-3/5 flex flex-col justify-center items-center' id='aboutme'>
       <motion.p
         className='m-2 bg-slate-200/75 rounded p-2'
         initial={{ opacity: 0, y: -35 }}
@@ -39,7 +40,7 @@ const AboutMe = () => {
       >
       Please do not hestitate to reach out if you are looking for a software developer for projects and opportunities large or small. 
       </motion.p>
-      <motion.span className="w-full flex justify-center"
+      <motion.span className="w-2/3 flex justify-evenly items-center"
         initial={{ opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{
@@ -48,10 +49,14 @@ const AboutMe = () => {
           duration: 1.5 }}
       >
         <Link href="https://www.linkedin.com/in/shanemisra/" target="_blank" rel="noreferrer noopener" className="text-6xl">
-        <i className="devicon-linkedin-plain"></i>
+          <motion.div whileHover={{ scale: 1.1 }}transition={{ type: "spring", stiffness: 250, damping: 10 }}>
+            <i className="devicon-linkedin-plain bg-slate-200/75" ></i>
+          </motion.div>
         </Link>
         <Link href="https://github.com/sdmisra" target="_blank" rel="noreferrer noopener" className="text-6xl">
-        <i className="devicon-github-original"></i>
+          <motion.div whileHover={{ scale: 1.1 }}transition={{ type: "spring", stiffness: 250, damping: 10 }}>
+            <i className="devicon-github-original bg-slate-200/75 rounded-full"></i>
+          </motion.div>
         </Link>
       </motion.span>
     </div>

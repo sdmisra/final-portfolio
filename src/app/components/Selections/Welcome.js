@@ -29,7 +29,7 @@ const Welcome = () => {
         duration: 2 
       }}>
       <div className= "flex flex-col items-center">
-        <h1 className=" flex justify-center text-4xl mb-8">Hello!</h1>
+        <h1 className=" flex justify-center text-4xl mb-8 bg-slate-200/50 ">Hello!</h1>
         <motion.p className='w-4/5 my-4 bg-slate-200/75 rounded p-2'
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0, }}
