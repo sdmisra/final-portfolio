@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 
 const ProjectsPage = ()=> {
   const [selectedProject, setSelectedProject] = useState(null)
+
   const projects = ProjectArray
 
   const selectProject = (project) => {
@@ -18,12 +19,12 @@ const ProjectsPage = ()=> {
   }, [selectedProject])
 
   return (
-    <section className=" flex justify-center my-40">
-    <motion.section className='flex flex-col justify-center items-center  h-auto w-4/5 bg-slate-700/50 my-12 py-6 backdrop-blur-sm rounded drop-shadow-sm' id='projects'
+    <section className=" flex justify-center my-40 text-emerald-950" id='projects'>
+    <motion.section className='flex flex-col justify-center items-center h-46 w-4/5 bg-slate-700/50 my-12 py-6 backdrop-blur-sm rounded drop-shadow-sm'
     initial={{opacity:0 }}
     whileInView={{opacity: 1, border: '1px slategrey solid'}}
     transition={{
-      delay: .75,
+      delay: .65,
       type: 'tween',
       duration: 2
     }}>
