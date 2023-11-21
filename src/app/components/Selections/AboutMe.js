@@ -3,20 +3,22 @@ import React from 'react'
 import 'devicon';
 import {motion} from 'framer-motion';
 import Link from 'next/link'
+import WordsCarousel from './wordsCarousel';
 
 const AboutMe = () => {
 
   return (
-    <section className="my-40 pt-8">
-    <motion.section className='flex justify-between bg-slate-700/50 my-12 w-2/3 py-6 backdrop-blur-sm p-6 rounded ml-12 drop-shadow'
+    <section className="flex flex-col items-center my-40 pt-8">
+    <motion.section className='flex justify-evenly bg-slate-700/50 my-12 w-4/5 py-6 backdrop-blur-sm p-6 rounded drop-shadow'
     initial={{opacity:0 }}
     whileInView={{opacity: 1, border: '1px slategrey solid'}}
+    viewport={{ once: true }}
     transition={{
       delay: 1.5,
       type: 'tween',
       duration: 2
     }}>
-    <div className='h-auto w-3/5 flex flex-col justify-center items-center' id='aboutme'>
+    <div className='h-auto w-2/5 flex flex-col justify-center items-center' id='aboutme'>
       <motion.p
         className='m-2 bg-slate-200/75 rounded p-2'
         initial={{ opacity: 0, y: -35 }}
@@ -61,11 +63,11 @@ const AboutMe = () => {
       </motion.span>
     </div>
     <motion.div 
-    className='flex justify-center w-2/5 border-b-2 border-slate-200 border-double'
+    className='flex justify-center w-2/5 border-b-2 border-slate-200 border-double bg-slate-400 rounded-sm drop-shadow-md'
     initial={{ opacity: 0, x: 150 }}
     whileInView={{ opacity: 1, x: 0, }}
     transition={{ delay: 9, duration: 3 }}>
-    Kind words from my previous teams:
+    <WordsCarousel />
     </motion.div>
     </motion.section>
     </section>

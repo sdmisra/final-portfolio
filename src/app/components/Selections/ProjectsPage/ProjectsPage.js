@@ -32,7 +32,7 @@ const ProjectsPage = ()=> {
       <ProjectCard project={projects['chronicles']} select={()=>{selectProject('chronicles')}}/>
       <ProjectCard project={projects['hyperloom']} select={()=>{selectProject('hyperloom')}}/>
     </div>
-      {!selectedProject ? <h1 className="border-2 bg-slate-400/50 border-slate-100/25 rounded drop-shadow p-2 mt-6">Please choose a project above for details!</h1> : 
+      {!selectedProject ? <h1 className="border-2 bg-slate-100/75 border-slate-100/25 rounded drop-shadow p-2 mt-6">Please choose a project above for details!</h1> : 
     <motion.section 
       className='flex flex-col items-center w-full max-h-[1200px]'
       initial={{ opacity: 0, y: 50}}
@@ -52,4 +52,4 @@ const ProjectsPage = ()=> {
   )
 }
 
-export default ProjectsPage;
+export default ProjectsPage

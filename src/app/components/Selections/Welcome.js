@@ -10,6 +10,7 @@ const Welcome = () => {
     className='flex justify-evenly items-center bg-slate-700/25 w-4/5 py-12 my-12 px-6 backdrop-blur-sm rounded drop-shadow-md' 
     id='welcome'
     initial={{opacity:0}}
+    viewport={{ once: true }}
     whileInView={{opacity: 1, border: '1px slategrey solid'}}
     transition={{
       delay: .75,
