@@ -20,13 +20,13 @@ const ProjectsPage = ()=> {
 
   return (
     <section className=" flex justify-center my-60 text-emerald-950" id='projects'>
-    <motion.section className='flex flex-col justify-center items-center h-46 w-4/5 bg-slate-700/50 my-12 py-6 backdrop-blur-sm rounded drop-shadow-sm'
+    <motion.section className='flex flex-col justify-center items-center h-46 w-4/5 bg-slate-700/50 my-32 py-6 rounded drop-shadow-sm'
     initial={{opacity:0 }}
     whileInView={{opacity: 1, border: '1px slategrey solid'}}
     transition={{
-      delay: .65,
+      delay: .25,
       type: 'tween',
-      duration: 2
+      duration: .85
     }}>
     <div className='flex justify-evenly w-full'>
       <ProjectCard project={projects['anthems']} select={()=>selectProject('anthems')}/>

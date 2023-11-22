@@ -1,13 +1,14 @@
+'use client'
 import {useState, useEffect} from 'react';
 import wordsArray from '@/app/assets/wordsArray'
 import { motion } from 'framer-motion'
 
 const WordsCarousel = () => {
-  const [Index, setIndex] = useState(0)
+  let [Index, setIndex] = useState(0)
 
   const wordsOfSupport = wordsArray.recommendations.map((element, index)=> {
     return (
-      <motion.p className="m-2 px-2 rounded-sm"
+      <motion.p className="m-2 py-4 p-2 bg-slate-100/60 rounded-lg text-sm"
       key={`feedback-${index}`}
       initial={{opacity: 1.25}}
       viewport={{ once: true }}
@@ -22,6 +23,14 @@ const WordsCarousel = () => {
     )
   })
 
+  const increaseIndex = () => {
+    Index === 4 ? setIndex(0) : setIndex(Index + 1)
+  }
+
+  const decreaseIndex = () => {
+    Index === 0 ? setIndex(4) : setIndex(Index - 1)
+  }
+
   useEffect(() => {
     const timer = setTimeout(() => {
       if(Index === 4) {
@@ -34,10 +43,24 @@ const WordsCarousel = () => {
   }, [Index])
 
   return (
-    <div className="flex justify-center items-center mx-4 py-4"> 
-      <h1 className="absolute top-0 left-0 items-center m-2 p-4 bg-slate-300/75 rounded-sm drop-shadow-md">Words from previous teammates:</h1>
+    <>
+    <div className="flex flex-col justify-center items-center mx-4 py-4"> 
+      <h1 className="absolute top-0 left-0 items-center m-2 p-4 bg-slate-200/70 rounded-sm drop-shadow-md">Kind words from colleagues:</h1>
       {wordsOfSupport[Index]}
     </div>
+    <span className="flex justify-evenly h-14 w-2/3 text-5xl text-slate-200/80 drop-shadow-xl">
+      <motion.button onClick={()=> {decreaseIndex()}}
+      whileHover={{scale: 1.15, transition: { duration: 1.15 },}}
+      whileTap={{ opacity: 1, scale: 1.35 }}
+      >{`<`}
+      </motion.button>
+      <motion.button onClick={()=> {increaseIndex()}}
+      whileHover={{scale: 1.15, transition: { duration: 1.15 },}}
+      whileTap={{ opacity: 1, scale: 1.35 }}
+      >{`>`}
+      </motion.button>
+    </span>
+    </>
   )
 }
 
