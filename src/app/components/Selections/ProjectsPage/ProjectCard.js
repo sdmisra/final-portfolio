@@ -4,7 +4,7 @@ export const ProjectCard = (props) => {
 
   
   return (
-    <button className='drop-shadow-xl p-2 rounded bg-slate-100/50 mb-4 cursor-pointer hover:bg-slate-50/75 active:bg-slate-50/100 focus:ring focus:ring-slate-50/75 text-emerald-950' onClick={()=>selectCard()}>
+    <button className='w-1/4 md:w-auto drop-shadow-xl p-1 md:p-2 text-xs md:text-base rounded-lg bg-slate-100/50 mb-4 cursor-pointer hover:bg-slate-50/75 active:bg-slate-50/100 focus:ring focus:ring-slate-50/75 text-emerald-950' onClick={()=>selectCard()}>
       <div className='card-left'>
       <h2 className='card-text'>{title}</h2>
       <h3 className='card-text'>Team Size: {size}</h3>

@@ -8,7 +8,7 @@ const WordsCarousel = () => {
 
   const wordsOfSupport = wordsArray.recommendations.map((element, index)=> {
     return (
-      <motion.p className="m-2 py-4 p-2 bg-slate-100/60 rounded-lg text-sm"
+      <motion.p className="text-xs m-2 md:mt-8 py-2 md:py-4 p-1 md:p-2 bg-slate-100/60 rounded-lg md:text-sm"
       key={`feedback-${index}`}
       initial={{opacity: 1.25}}
       viewport={{ once: true }}
@@ -45,7 +45,7 @@ const WordsCarousel = () => {
   return (
     <>
     <div className="flex flex-col justify-center items-center mx-4 py-4"> 
-      <h1 className="absolute top-0 left-0 items-center m-2 p-4 bg-slate-200/70 rounded-sm drop-shadow-md">Kind words from colleagues:</h1>
+      <h1 className="absolute top-0 left-0 items-center m-2 p-1 text-xs md:p-4 md:text-base bg-slate-200/70 rounded-sm drop-shadow-md md:pb-2 md:mb-6">Kind words from colleagues:</h1>
       {wordsOfSupport[Index]}
     </div>
     <span className="flex justify-evenly h-14 w-2/3 text-5xl text-slate-200/80 drop-shadow-xl">
