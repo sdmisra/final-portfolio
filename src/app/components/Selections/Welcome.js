@@ -16,7 +16,7 @@ const Welcome = () => {
         type: 'tween',
         duration: 2
       }}>
-        <Image alt='This websites creator and subject matter, Shane Misra' src={profile} className='aspect-auto rounded m-4 drop-shadow-xl w-4/5 md:w-2/5 border-2 border-slate-300/25'/>
+        <Image alt='This websites creator and subject matter, Shane Misra' src={profile} className='aspect-auto rounded m-4 drop-shadow-xl w-4/5 md:w-2/5 border-2 border-slate-300/25' priority={true}/>
         <motion.div
         className="w-2/3"
         initial={{ opacity: 0}}
