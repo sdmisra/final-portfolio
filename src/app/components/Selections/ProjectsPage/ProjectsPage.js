@@ -19,8 +19,8 @@ const ProjectsPage = ()=> {
   }, [selectedProject])
 
   return (
-    <section className=" flex justify-center my-60 text-emerald-950" id='projects'>
-    <motion.section className='flex flex-col justify-center items-center h-46 w-4/5 bg-slate-700/50 my-32 py-6 rounded drop-shadow-sm'
+    <section className=" flex justify-center my-24 md:my-60 text-emerald-950" id='projects'>
+    <motion.section className='flex flex-col justify-center items-center h-46 w-[95vw] md:w-[90vw] bg-slate-700/50 my-32 py-6 rounded drop-shadow-sm'
     initial={{opacity:0 }}
     whileInView={{opacity: 1, border: '1px slategrey solid'}}
     transition={{
@@ -28,7 +28,7 @@ const ProjectsPage = ()=> {
       type: 'tween',
       duration: .85
     }}>
-    <div className='flex justify-evenly w-full'>
+    <div className='flex justify-evenly w-full md:w-4/5'>
       <ProjectCard project={projects['anthems']} select={()=>selectProject('anthems')}/>
       <ProjectCard project={projects['chronicles']} select={()=>{selectProject('chronicles')}}/>
       <ProjectCard project={projects['hyperloom']} select={()=>{selectProject('hyperloom')}}/>
@@ -42,7 +42,7 @@ const ProjectsPage = ()=> {
     >
       <motion.a 
         href={`${projects[selectedProject].link}`} target="_blank" rel="noreferrer noopener"
-        className="flex justify-center w-3/4"
+        className="flex justify-center w-[92vw] md:w-[70vw]"
         initial={{opacity: .75}}
         whileHover={{opacity: .95 , transition: { duration: 1.65 },}}>
           <Image 

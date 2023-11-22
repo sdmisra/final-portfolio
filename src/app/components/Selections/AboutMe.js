@@ -8,8 +8,8 @@ import WordsCarousel from './wordsCarousel';
 const AboutMe = () => {
 
   return (
-    <section className="flex flex-col items-center mt-40 mb-20 pt-8" id='aboutme'>
-    <motion.section className='flex justify-evenly bg-slate-700/50 my-12 w-4/5 py-6 p-6 rounded drop-shadow'
+    <section className="flex flex-col items-center mt-20 md:mt-40 mb-8 md:mb-20 pt-8" id='aboutme'>
+    <motion.section className='flex flex-col md:flex-row justify-evenly items-center bg-slate-700/50 my-12 w-[95vw] md:w-4/5 py-6 p-1 md:p-6 rounded drop-shadow'
     initial={{opacity:0 }}
     whileInView={{opacity: 1, border: '1px slategrey solid'}}
     viewport={{ once: true }}
@@ -18,9 +18,9 @@ const AboutMe = () => {
       type: 'tween',
       duration: 1.65
     }}>
-    <div className='h-auto w-2/5 flex flex-col justify-center items-center text-emerald-950'>
+    <div className='h-auto w-full md:w-2/5 my-2 md:my-4 text-sm md:text-base flex flex-col justify-center items-center text-emerald-950'>
       <motion.p
-        className='m-2 bg-slate-200/90 border-2 border-slate-300/25 rounded p-2'
+        className='w-[95%] m-2 bg-slate-200/90 border-2 border-slate-300/25 rounded p-2'
         initial={{ opacity: 0, y: -35 }}
         whileInView={{ opacity: 1, y: 0, }}
         transition={{ delay: 1.5, duration: 1.5 }}
@@ -63,10 +63,10 @@ const AboutMe = () => {
       </motion.span>
     </div>
     <motion.div 
-    className='flex flex-col pt-4 justify-center items-center w-2/5 border-2 border-slate-400/90 bg-slate-600/80 rounded-sm drop-shadow-md'
+    className='flex flex-col pt-4 justify-center items-center w-[90vw] md:w-1/2 border-2 border-slate-400/90 bg-slate-600/80 rounded-sm drop-shadow-md'
     initial={{ opacity: 0, x: 150 }}
     whileInView={{ opacity: 1, x: 0, }}
-    transition={{ delay: 6, duration: 2.5 }}>
+    transition={{ delay: 3, duration: 2.5 }}>
     <WordsCarousel />
     </motion.div>
     </motion.section>

@@ -19,24 +19,24 @@ const Header = ()=> {
       duration: 4
     }}
     >
-      <div className='flex justify-evenly text-lg'>
-        <motion.a className='h-4 text-emerald-950 hover:text-emerald-700/75'
+      <div className='flex justify-evenly text-md md:text-lg'>
+        <motion.a className='h-2 md:h-6 text-emerald-950 hover:text-emerald-700/75'
         href='#welcome'
         whileHover={{scale: 1.15, transition: { duration: 1.15 },}}
         whileTap={{ scale: 0.9 }} 
         >Home</motion.a>
-        <motion.a className='h-4 text-emerald-950 hover:text-emerald-700/75' 
+        <motion.a className='h-2 md:h-6 text-emerald-950 hover:text-emerald-700/75' 
         href='#aboutme'
         whileHover={{scale: 1.15, transition: { duration: 1.15 },}}
         whileTap={{ scale: 0.9 }} 
         >About Me</motion.a>
-        <motion.a className='h-4 text-emerald-950 hover:text-emerald-700/75' 
+        <motion.a className='h-2 md:h-6 text-emerald-950 hover:text-emerald-700/75' 
         href='#projects'
         whileHover={{scale: 1.15,transition: { duration: 1.15 },}}
         whileTap={{ scale: 0.9 }} 
         >Projects</motion.a>
         <motion.a 
-        className='h-4 text-emerald-950 hover:text-emerald-700/75' 
+        className='h-2 md:h-6 text-emerald-950 hover:text-emerald-700/75' 
         href='#contact'
         whileHover={{scale: 1.15,transition: { duration: 1.15 },}}
         whileTap={{ scale: 0.9 }} 
