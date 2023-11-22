@@ -10,7 +10,7 @@ const Header = ()=> {
   return (
     <section className="absolute top-0 w-full z-10">
     <motion.header 
-    className='h-8 bg-slate-200/90 border-b-2 border-emerald-900/25 hover:bg-slate-200/50'
+    className='h-8 bg-slate-200 border-b-2 border-emerald-900/25'
     initial={{opacity:0}}
     whileInView={{opacity: 1}}
     transition={{
