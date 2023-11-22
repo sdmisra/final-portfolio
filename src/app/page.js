@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
     <Header />
-    <main className='flex justify-center flex-col items-center h-[94vh]'> 
+    <main className='flex justify-center flex-col items-center h-full'> 
     <Dashboard />
     </main>
     </>

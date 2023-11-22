@@ -6,7 +6,7 @@ import Footer from '../Footer'
 
 const Contact = () => {
   return (
-    <section className="mt-40 text-emerald-800">
+    <section className="flex flex-col items-center mt-52 text-emerald-800">
     <motion.section 
     className='h-auto flex w-full justify-center my-12 py-6 rounded drop-shadow'
     >

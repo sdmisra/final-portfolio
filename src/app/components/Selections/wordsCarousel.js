@@ -6,7 +6,6 @@ const WordsCarousel = () => {
   const [Index, setIndex] = useState(0)
 
   const wordsOfSupport = wordsArray.recommendations.map((element, index)=> {
-    console.log(element)
     return (
       <motion.p className="m-2 px-2 rounded-sm"
       key={`feedback-${index}`}
