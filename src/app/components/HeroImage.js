@@ -9,7 +9,7 @@ const HeroImage = () => {
         loading='lazy'
         style={{objectFit:'cover'}}
         fill={true}
-        quality={100}
+        quality={75}
         alt='a misty treeline'
         className="absolute -z-10"
     />

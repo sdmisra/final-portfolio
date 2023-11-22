@@ -1,42 +1,49 @@
 'use client'
 import React from 'react'
-import { usePathname } from 'next/navigation'
-import { useEffect } from 'react';
+// import { usePathname } from 'next/navigation'
+// import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const Header = ()=> {
-  const pathname = usePathname();
-
-  useEffect(()=> {
-    console.log(pathname)
-  })
+  // const pathname = usePathname();
 
   return (
+    <section className="absolute top-0 w-full z-10">
     <motion.header 
-    className='sticky top-0 w-full bg-slate-300/25 border-b-2 border-emerald-900/25'
+    className='h-8 bg-slate-200/90 border-b-2 border-emerald-900/25 hover:bg-slate-200/50'
     initial={{opacity:0}}
     whileInView={{opacity: 1}}
     transition={{
       delay: 1,
       type: 'tween',
-      duration: 7
+      duration: 4
     }}
     >
-      <div className='flex justify-evenly pt-2 '>
-        <a className='h-8 ' href='#welcome' >
-          Home
-        </a>
-        <a className='h-8 ' href='#aboutme' >
-          About Me
-        </a>
-        <a className='h-8 ' href='#projects' >
-          Projects
-        </a>
-        <a className='h-8 ' href='#contact' >
-          Contact
-        </a>
+      <div className='flex justify-evenly text-lg'>
+        <motion.a className='h-4 text-emerald-950 hover:text-emerald-700/75'
+        href='#welcome'
+        whileHover={{scale: 1.15, transition: { duration: 1.15 },}}
+        whileTap={{ scale: 0.9 }} 
+        >Home</motion.a>
+        <motion.a className='h-4 text-emerald-950 hover:text-emerald-700/75' 
+        href='#aboutme'
+        whileHover={{scale: 1.15, transition: { duration: 1.15 },}}
+        whileTap={{ scale: 0.9 }} 
+        >About Me</motion.a>
+        <motion.a className='h-4 text-emerald-950 hover:text-emerald-700/75' 
+        href='#projects'
+        whileHover={{scale: 1.15,transition: { duration: 1.15 },}}
+        whileTap={{ scale: 0.9 }} 
+        >Projects</motion.a>
+        <motion.a 
+        className='h-4 text-emerald-950 hover:text-emerald-700/75' 
+        href='#contact'
+        whileHover={{scale: 1.15,transition: { duration: 1.15 },}}
+        whileTap={{ scale: 0.9 }} 
+        >Contact</motion.a>
       </div>
     </motion.header>
+    </section>
   )
 }
 
