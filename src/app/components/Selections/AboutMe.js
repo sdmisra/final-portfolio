@@ -3,7 +3,7 @@ import React from 'react'
 import 'devicon';
 import {motion} from 'framer-motion';
 import Link from 'next/link'
-import WordsCarousel from './WordsCarousel';
+import WordsCarousel from './wordsCarousel';
 
 const AboutMe = () => {
 
