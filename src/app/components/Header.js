@@ -16,7 +16,7 @@ const Header = ()=> {
     transition={{
       delay: 1,
       type: 'tween',
-      duration: 4
+      duration: 2
     }}
     >
       <div className='flex justify-evenly text-md md:text-lg'>
