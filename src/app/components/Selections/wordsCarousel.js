@@ -48,7 +48,7 @@ const WordsCarousel = () => {
       <h1 className="absolute top-0 left-0 items-center m-2 p-1 text-xs md:p-4 md:text-base bg-slate-200/70 rounded-sm drop-shadow-md md:pb-2 md:mb-6">Kind words from colleagues:</h1>
       {wordsOfSupport[Index]}
     </div>
-    <span className="flex justify-evenly h-14 w-2/3 text-5xl text-slate-200/80 drop-shadow-xl">
+    <span className="md:absolute md:bottom-0 flex justify-evenly h-14 w-2/3 text-5xl text-slate-200/80 drop-shadow-xl">
       <motion.button onClick={()=> {decreaseIndex()}}
       whileHover={{scale: 1.15, transition: { duration: 1.15 },}}
       whileTap={{ opacity: 1, scale: 1.35 }}

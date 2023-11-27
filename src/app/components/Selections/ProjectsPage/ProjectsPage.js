@@ -15,9 +15,6 @@ const ProjectsPage = ()=> {
     selectedProject === project ? setSelectedProject(null) : setSelectedProject(project);
   }
 
-  useEffect(()=> {
-  }, [selectedProject])
-
   return (
     <section className=" flex justify-center my-24 md:my-60 text-emerald-950" id='projects'>
     <motion.section className='flex flex-col justify-center items-center h-46 w-[95vw] md:w-[90vw] bg-slate-700/50 my-32 py-6 rounded drop-shadow-sm'
@@ -38,13 +35,13 @@ const ProjectsPage = ()=> {
       className='flex flex-col items-center max-w-[1000px] max-h-[1200px]'
       initial={{ opacity: 0, y: 50}}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 2, duration: 2 }}
+      transition={{ delay: .5, duration: 1.5 }}
     >
       <motion.a 
         href={`${projects[selectedProject].link}`} target="_blank" rel="noreferrer noopener"
         className="flex justify-center w-[92vw] md:w-[70vw]"
         initial={{opacity: .75}}
-        whileHover={{opacity: .95 , transition: { duration: 1.65 },}}>
+        whileHover={{opacity: .95 , transition: { duration: 1.25 },}}>
           <Image 
           src={projects[selectedProject].previewImg} 
           alt={selectedProject} 
