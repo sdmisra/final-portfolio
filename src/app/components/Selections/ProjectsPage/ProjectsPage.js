@@ -12,7 +12,6 @@ const ProjectsPage = ()=> {
   const nameArray = Object.keys(projects)
   let projectCards = nameArray.map((name, i)=>
   <ProjectCard project={projects[name]} select={()=>selectProject([name])} key={i}/>)
-  console.log(projectCards)
 
   const selectProject = (project) => {
     selectedProject === project ? setSelectedProject(null) : setSelectedProject(project);
