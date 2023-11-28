@@ -1,17 +1,11 @@
 export const ProjectCard = (props) => {
-  const { title, size, mod } = props.project
+  const { title } = props.project
   const selectCard = props.select
 
   
   return (
-    <button className='w-1/4 md:w-auto drop-shadow-xl p-1 md:p-2 text-xs md:text-base rounded-lg bg-slate-100/50 mb-4 cursor-pointer hover:bg-slate-50/75 active:bg-slate-50/100 focus:ring focus:ring-slate-50/75 text-emerald-950' onClick={()=>selectCard()}>
-      <div className='card-left'>
-      <h2 className='card-text'>{title}</h2>
-      <h3 className='card-text'>Team Size: {size}</h3>
-      <h4 className='card-text'>Turing Module: {mod}</h4>
-      </div>
-      <div className='card-right'>
-      </div>
+    <button className='w-[20%] md:w-[12%] h-1/5 drop-shadow-xl p-1 md:p-2 text-xs rounded-xl bg-slate-300/[90] cursor-pointer hover:bg-slate-200 active:bg-slate-50/100 text-emerald-950' onClick={()=>selectCard()}>
+      <h2 className='text-[.5rem] md:text-base'>{title}</h2>
     </button>
   )
 }
