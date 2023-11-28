@@ -81,7 +81,7 @@ const AboutMe = () => {
       </motion.span>
     </div>
       <motion.div 
-      className='flex flex-col pt-4 justify-center items-center w-[90vw] md:w-1/2 bg-slate-800/80 rounded-[2.5rem] drop-shadow-md md:min-h-full'
+      className='flex flex-col pt-4 justify-center items-center w-[90vw] md:w-1/2 bg-slate-800/70 rounded-[2.5rem] drop-shadow-md md:min-h-full'
       initial={{ opacity: 0, x: 150 }}
       whileInView={{ opacity: 1, x: 0, }}
       transition={{ delay: 3, duration: 2.5 }}>
