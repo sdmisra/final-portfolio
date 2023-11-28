@@ -10,7 +10,7 @@ const Contact = () => {
     <motion.section 
     className='h-auto flex w-full justify-center mt-12 py-6 rounded drop-shadow'
     >
-    <div className="bg-slate-800/25 drop-shadow-md rounded border-2 border-slate-50/50 p-4">
+    <div className="bg-slate-800/25 drop-shadow-md rounded p-4">
       <h1 id='contact' className="text-xs md:text-base m-2 md:m-6 bg-slate-200 rounded p-2 border-slate-50/75">
         Have a project that needs another pair of hands on the keyboard?
       </h1>

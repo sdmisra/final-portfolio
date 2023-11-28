@@ -8,7 +8,7 @@ const WordsCarousel = () => {
 
   const wordsOfSupport = wordsArray.recommendations.map((element, index)=> {
     return (
-      <motion.p className="text-xs m-2 md:mt-8 py-2 md:py-4 p-1 md:p-2 bg-slate-100/60 rounded-lg md:text-lg"
+      <motion.p className="text-xs m-2 md:mt-8 py-2 md:py-4 p-1 md:p-2 bg-slate-200/90 rounded-lg md:text-lg"
       key={`feedback-${index}`}
       initial={{opacity: 1.25}}
       viewport={{ once: true }}
