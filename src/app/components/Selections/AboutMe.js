@@ -11,7 +11,7 @@ const AboutMe = () => {
 
   return (
     <section className="flex flex-col items-center mt-20 md:mt-40 mb-8 md:mb-20 pt-8" id='aboutme'>
-      <motion.div className='sticky top-24 w-full h-32 md:h-48 z-10'
+      <motion.div className='sm:hidden md:block sticky top-24 w-full h-32 md:h-48 z-10'
       initial={{opacity: 0, x: -35 }}
       whileInView={{opacity: 1, x: 0 }}
       transition={{
@@ -19,9 +19,9 @@ const AboutMe = () => {
         type: 'tween',
         duration: .85
       }}>
-        <h2 className="w-1/6 md:w-[12%] text-base md:text-2xl text-slate-300 bg-slate-800/80 backdrop-blur-sm border-x rounded drop-shadow-lg p-1 md:p-2 my-2">About Me:</h2>
+        <h2 className="w-1/4 md:w-[12%] text-base md:text-2xl text-slate-300 bg-slate-800/80 backdrop-blur-sm border-x border-x-slate-300 rounded drop-shadow-lg p-1 md:p-2 my-2 ml-2">About Me:</h2>
       </motion.div>
-    <motion.section className='flex flex-col md:flex-row justify-evenly items-center bg-slate-700/20 my-12 w-[95vw] md:w-4/5 py-6 p-1 md:p-6 rounded drop-shadow'
+    <motion.section className='flex flex-col md:flex-row justify-evenly items-center bg-slate-700/20 my-12 w-[95vw] md:w-4/5 py-6 p-1 md:p-6 md:rounded-[6rem] drop-shadow'
     initial={{opacity:0 }}
     whileInView={{opacity: 1}}
     viewport={{ once: true }}
@@ -81,7 +81,7 @@ const AboutMe = () => {
       </motion.span>
     </div>
       <motion.div 
-      className='flex flex-col pt-4 justify-center items-center w-[90vw] md:w-1/2 bg-slate-800/80 rounded-sm drop-shadow-md md:min-h-full'
+      className='flex flex-col pt-4 justify-center items-center w-[90vw] md:w-1/2 bg-slate-800/80 rounded-[2.5rem] drop-shadow-md md:min-h-full'
       initial={{ opacity: 0, x: 150 }}
       whileInView={{ opacity: 1, x: 0, }}
       transition={{ delay: 3, duration: 2.5 }}>

@@ -45,7 +45,7 @@ const WordsCarousel = () => {
   return (
     <>
     <div className="flex flex-col justify-center items-center mx-4 py-4"> 
-      <h1 className="absolute top-0 left-0 items-center m-2 p-1 text-xs md:p-4 md:text-xl bg-slate-200/70 rounded-sm drop-shadow-md md:pb-2 md:mb-6">Kind words from colleagues:</h1>
+      <h1 className="absolute top-0 left-0 items-center m-2 p-1 text-xs md:p-4 md:text-xl text-slate-200/90 drop-shadow-md md:pb-2 md:mb-6">Kind words from colleagues:</h1>
       {wordsOfSupport[Index]}
     </div>
     <span className="md:absolute md:bottom-0 flex justify-evenly h-14 w-2/3 text-5xl text-slate-200/80 drop-shadow-xl">
