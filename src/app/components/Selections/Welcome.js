@@ -32,7 +32,7 @@ const Welcome = () => {
             initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0, }}
             transition={{ delay: 2, duration: 2.15 }}>
-            Welcome to my portfolio - it was a dream of mine to get into web development, so thank you for your time while you check it out.
+            Welcome to my portfolio - it was a dream of mine to get into web development, so thank you for taking a look.
           </motion.p>
           <motion.p className="w-[90vw] md:w-4/5 my-2 md:my-4 text-sm md:text-base bg-slate-200/90 rounded p-2 drop-shadow-md"
             initial={{ opacity: 0, y: 25 }}
