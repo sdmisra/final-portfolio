@@ -1,8 +1,8 @@
-import { Nunito } from 'next/font/google'
+import { Signika } from 'next/font/google'
 import HeroImage from './components/HeroImage'
 import './globals.css'
 
-const nunito = Nunito({
+const signika = Signika({
   subsets: ["latin-ext"],
   display: 'swap',
 });
@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${nunito.className}`}>
+      <body className={`${signika.className}`}>
         <HeroImage />
         {children}
       </body>

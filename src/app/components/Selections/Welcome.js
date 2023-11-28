@@ -32,13 +32,13 @@ const Welcome = () => {
             initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0, }}
             transition={{ delay: 2, duration: 2.15 }}>
-            Welcome to my humble portfolio - it is no exaggeration that having visitors to this page is a dream come true for me, so thank you for taking the time to check it out.
+            Welcome to my portfolio - it was a dream of mine to get into web development, so thank you for taking a look.
           </motion.p>
           <motion.p className="w-[90vw] md:w-4/5 my-2 md:my-4 text-sm md:text-base bg-slate-200/90 rounded p-2 drop-shadow-md"
             initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0, }}
             transition={{ delay: 2.75, duration: 2 }}>
-            My work so far in this field has a foundation in Frontend technologies, with an emphasis on the React framework. I am passionate about creating applications and tools that enable their users to learn and discover more about the world around us.
+            My work so far in this field has a foundation in Frontend technologies, with an emphasis on the React framework. I am passionate about creating applications and tools that empower their users to grow and discover more about the world around us.
           </motion.p>
           <motion.p className='w-[90vw] md:w-4/5 my-2 md:my-4 text-sm md:text-base bg-slate-200/90 rounded p-2 drop-shadow-md'
             initial={{ opacity: 0, y: 25 }}
