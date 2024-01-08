@@ -25,7 +25,7 @@ const ProjectArray = {
     tech: ['react', 'redux', 'javascript','html5', 'css3', 'mocha', 'git', 'python', 'django'],
     abstract: 'This project is a unique offering indeed, as it enables users to explore vibrant imagined worlds that have been generated with ChatGPT, MidJourney, and our teams intention to offer fuel to the creative fires of those who interact with it. Users can browse worlds that have been randomly selected and offered, or they may filter through multiple carousels of varied descriptions and categories. Each world is a self-consisent concept, with its own locations of note, historical events, key characters, and inhabitants to explore. Worlds vary in technological scale, magical influence, and even in metaphysical shape. The tech stack used to bring this to life is: React, Redux, Framer Motion, Python, Django, and their respective testing suites for full component and E2E testing.',
     previewImg: hyperloomPreview,
-    link: 'https://hyper-loom-explorer.vercel.app/',
+    link: 'https://hyperloom.shane-misra.com/',
     github: 'https://github.com/The-Never-Ending-Story/front-end'
   }
 }
