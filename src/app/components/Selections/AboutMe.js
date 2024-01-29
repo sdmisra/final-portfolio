@@ -19,7 +19,7 @@ const AboutMe = () => {
         type: 'tween',
         duration: .85
       }}>
-        <h2 className="w-1/4 md:w-[12%] text-base md:text-2xl text-slate-300 bg-slate-800/80 backdrop-blur-sm border-x border-x-slate-300 rounded drop-shadow-lg p-1 md:p-2 my-2 ml-2">About Me:</h2>
+        <h2 className="w-1/4 md:w-[12%] text-base md:text-2xl text-slate-300 bg-slate-800/80 backdrop-blur-sm border-x border-x-slate-300 rounded drop-shadow-md p-1 md:p-2 my-2 ml-2">About Me:</h2>
       </motion.div>
     <motion.section className='flex flex-col md:flex-row justify-evenly items-center bg-slate-700/20 my-12 w-[95vw] md:w-4/5 py-6 p-1 md:p-6 md:rounded-[6rem] drop-shadow'
     initial={{opacity:0 }}

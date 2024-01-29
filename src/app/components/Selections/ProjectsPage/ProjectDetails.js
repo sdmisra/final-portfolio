@@ -19,7 +19,7 @@ const ProjectDetails = ({project}) => {
   })
 
   return (
-      <div className='flex flex-col items-center text-emerald-950'>
+      <div className='flex flex-col items-center text-teal-950'>
         <h1 className='text-base md:text-2xl bg-slate-300/90 rounded drop-shadow-md p-1 md:p-2 my-2'>Abstract:</h1>
         <p className='flex flex-col bg-slate-200/80 text-xs md:text-lg indent-6 w-[90vw] md:w-2/3 justify-center px-4 py-2 m-4 rounded-lg drop-shadow-lg'>{abstract}</p>
         <h3 className='underline text-slate-100/75'>Tech Stack Used:</h3>
@@ -28,8 +28,8 @@ const ProjectDetails = ({project}) => {
           {projectStack}
         </motion.span>
         <span className="flex justify-evenly w-2/3 md:w-1/3 text-sm md:text-xl p-2 text-slate-100/75">
-          <a href={link} className="text-emerald-900 p-1 bg-slate-300/75 hover:border-slate-500 hover:bg-slate-200/75 rounded-lg">Deployed App</a>
-          <a href={github} className="text-emerald-900 p-1 bg-slate-300/75 hover:border-slate-500 hover:bg-slate-200/75  rounded-lg">GitHub Repo</a>
+          <a href={link} className="text-teal-900 p-1 bg-slate-300/75 hover:border-slate-500 hover:bg-slate-200/75 rounded-lg">Deployed App</a>
+          <a href={github} className="text-teal-900 p-1 bg-slate-300/75 hover:border-slate-500 hover:bg-slate-200/75  rounded-lg">GitHub Repo</a>
         </span>
       </div>
   )
