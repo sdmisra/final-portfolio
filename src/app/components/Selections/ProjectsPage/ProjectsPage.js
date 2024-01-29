@@ -18,7 +18,7 @@ const ProjectsPage = ()=> {
   }
 
   return (
-    <section className="flex flex-col justify-center items-center my-24 md:my-60 text-emerald-950" id='projects'>
+    <section className="flex flex-col justify-center items-center my-24 md:my-60 text-cyan-950" id='projects'>
     <motion.div className='sticky top-12 md:top-24 w-full h-32 md:h-48 z-10'
     initial={{opacity: 0, x: -35 }}
     whileInView={{opacity: 1, x: 0 }}
@@ -32,7 +32,7 @@ const ProjectsPage = ()=> {
       {projectCards}
       </span>
     </motion.div>
-    <motion.section className='flex flex-col justify-center items-center h-46 w-[95vw] md:w-[90vw] bg-slate-800/10 my-32 py-12 rounded-3xl md:rounded-[6rem] drop-shadow-sm'
+    <motion.section className='flex flex-col justify-center items-center h-46 w-[95vw] md:w-[90vw] bg-slate-800/30 my-32 py-12 rounded-3xl md:rounded-[6rem] drop-shadow-sm'
     initial={{opacity: 0 }}
     whileInView={{opacity: 1 }}
     transition={{

@@ -2,11 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 // import treeline from '/public/treeline.webp'
 import aurelia from '/public/AureliaBackground.png'
+import pastern from '/public/PasternExtended.png'
 
 const HeroImage = () => {
   return (
     <Image
-        src={aurelia}
+        src={pastern}
         loading='lazy'
         style={{objectFit:'cover'}}
         fill={true}
