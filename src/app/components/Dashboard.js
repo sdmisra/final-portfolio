@@ -7,7 +7,7 @@ import Welcome from './Selections/Welcome'
 const Dashboard = () => {
 
   return (
-    <section className='flex flex-col bg-scroll border-l-2 border-emerald-900/25 overflow-y-scroll sm:overflow-x-hidden'>
+    <section className='flex flex-col bg-scroll border-l-2 border-teal-900/25 overflow-y-scroll sm:overflow-x-hidden'>
       <Welcome/>
       <ProjectsPage/>
       <AboutMe />
