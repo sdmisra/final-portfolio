@@ -7,7 +7,7 @@ const Welcome = () => {
   return (
     <section className="flex justify-center w-full" id='welcome'>
       <motion.section 
-      className='flex justify-evenly flex-col md:flex-row md:w-4/5 items-center bg-slate-800/20 py-6 md:py-12 my-6 md:my-24 px-0 md:px-6 rounded md:rounded-[12rem] drop-shadow-md' 
+      className='flex justify-evenly flex-col md:flex-row md:w-4/5 items-center bg-slate-800/25 py-6 md:py-12 my-6 md:my-24 px-0 md:px-6 rounded md:rounded-[12rem] drop-shadow-md' 
       initial={{opacity:0}}
       viewport={{ once: true }}
       whileInView={{opacity: 1}}
@@ -26,7 +26,7 @@ const Welcome = () => {
           type: 'tween',
           duration: 1.25 
         }}>
-        <div className= "flex flex-col items-center text-emerald-950">
+        <div className= "flex flex-col items-center text-cyan-950">
           <h1 className="flex justify-center text-3xl md:text-6xl py-4 px-8 mb-2 md:mb-8 bg-slate-200/90  rounded-lg drop-shadow-md">Hello!</h1>
           <motion.p className='w-[90vw] md:w-4/5 my-2 md:my-4 text-sm md:text-base bg-slate-200/90 rounded p-2'
             initial={{ opacity: 0, y: 25 }}

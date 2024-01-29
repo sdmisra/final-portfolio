@@ -21,7 +21,7 @@ const AboutMe = () => {
       }}>
         <h2 className="w-1/4 md:w-[12%] text-base md:text-2xl text-slate-300 bg-slate-800/80 backdrop-blur-sm border-x border-x-slate-300 rounded drop-shadow-md p-1 md:p-2 my-2 ml-2">About Me:</h2>
       </motion.div>
-    <motion.section className='flex flex-col md:flex-row justify-evenly items-center bg-slate-700/20 my-12 w-[95vw] md:w-4/5 py-6 p-1 md:p-6 md:rounded-[6rem] drop-shadow'
+    <motion.section className='flex flex-col md:flex-row justify-evenly items-center bg-slate-800/30 my-12 w-[95vw] md:w-4/5 py-6 p-1 md:p-6 md:rounded-[6rem] drop-shadow'
     initial={{opacity:0 }}
     whileInView={{opacity: 1}}
     viewport={{ once: true }}
@@ -30,7 +30,7 @@ const AboutMe = () => {
       type: 'tween',
       duration: 1.65
     }}>
-    <div className='h-auto w-full md:w-2/5 my-2 md:my-4 text-sm md:text-base flex flex-col justify-center items-center text-emerald-950'>
+    <div className='h-auto w-full md:w-2/5 my-2 md:my-4 text-sm md:text-base flex flex-col justify-center items-center text-cyan-950'>
       <motion.p
         className='w-[95%] m-2 bg-slate-200/90  rounded p-2'
         initial={{ opacity: 0, y: -35 }}
@@ -70,7 +70,7 @@ const AboutMe = () => {
         <Link href="/ShaneMisra.pdf"className="">
           <motion.div whileHover={{ scale: 1.1 }}transition={{ type: "spring", stiffness: 250, damping: 10 }} className="flex flex-col items-center">
             <Image src={resumeIcon} alt="a link to my resume as a PDF file" height={60} title="My Resume"/>
-            <h4 className="px-1 text-slate-100/50 bg-emerald-950/75 rounded">Resume</h4>
+            <h4 className="px-1 text-slate-100/50 bg-cyan-950/75 rounded">Resume</h4>
           </motion.div>
         </Link>
         <Link href="https://github.com/sdmisra" target="_blank" rel="noreferrer noopener" className="text-6xl">

@@ -9,11 +9,11 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: .75rem;
+  width: 1rem;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: rgb(241, 241, 241);
   border: .15rem rgb(8, 145, 178, .45) solid;
   border-radius: .15rem;
 }
