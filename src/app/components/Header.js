@@ -20,23 +20,23 @@ const Header = ()=> {
     }}
     >
       <div className='flex h-10 md:h-12 justify-evenly items-center text-sm md:text-lg'>
-        <motion.a className='h-2 md:h-8 text-sky-800 hover:text-sky-700/75'
+        <motion.a className='h-2 md:h-8 text-sky-900 hover:text-sky-800/80'
         href='#welcome'
         whileHover={{scale: 1.15, transition: { duration: 1.15 },}}
         whileTap={{ scale: 0.9 }} 
         >Home</motion.a>
-        <motion.a className='h-2 md:h-8 text-sky-800 hover:text-sky-700/75' 
+        <motion.a className='h-2 md:h-8 text-sky-900 hover:text-sky-800/80' 
         href='#projects'
         whileHover={{scale: 1.15,transition: { duration: 1.15 },}}
         whileTap={{ scale: 0.9 }} 
         >Projects</motion.a>
-        <motion.a className='h-2 md:h-8 text-sky-800 hover:text-sky-700/75' 
+        <motion.a className='h-2 md:h-8 text-sky-900 hover:text-sky-800/80' 
         href='#aboutme'
         whileHover={{scale: 1.15, transition: { duration: 1.15 },}}
         whileTap={{ scale: 0.9 }} 
         >About Me</motion.a>
         <motion.a 
-        className='h-2 md:h-8 text-sky-800 hover:text-sky-700/75' 
+        className='h-2 md:h-8 text-sky-900 hover:text-sky-800/80' 
         href='#contact'
         whileHover={{scale: 1.15,transition: { duration: 1.15 },}}
         whileTap={{ scale: 0.9 }} 

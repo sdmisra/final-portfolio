@@ -7,7 +7,7 @@ const Welcome = () => {
   return (
     <section className="flex justify-center w-full" id='welcome'>
       <motion.section 
-      className='flex justify-evenly flex-col md:flex-row md:w-4/5 items-center bg-slate-800/25 py-6 md:py-12 my-6 md:my-24 px-0 md:px-6 rounded md:rounded-[12rem] drop-shadow-md' 
+      className='flex justify-evenly flex-col md:flex-row md:w-4/5 items-center py-6 md:py-12 my-6 md:my-24 px-0 md:px-6 rounded md:rounded-[12rem] drop-shadow-md' 
       initial={{opacity:0}}
       viewport={{ once: true }}
       whileInView={{opacity: 1}}
