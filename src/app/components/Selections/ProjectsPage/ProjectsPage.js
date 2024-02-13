@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import ProjectCard from './ProjectCard'
 import ProjectDetails  from './ProjectDetails'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import ProjectArray  from '@/app/assets/projectArray'
 import { motion } from 'framer-motion';
 
@@ -32,7 +32,7 @@ const ProjectsPage = ()=> {
       {projectCards}
       </span>
     </motion.div>
-    <motion.section className='flex flex-col justify-center items-center h-46 w-[95vw] md:w-[90vw] bg-slate-800/30 my-32 py-12 rounded-3xl md:rounded-[6rem] drop-shadow-sm'
+    <motion.section className='flex flex-col justify-center items-center h-46 w-[95vw] md:w-[90vw] my-32 py-12 rounded-3xl md:rounded-[6rem] drop-shadow-sm'
     initial={{opacity: 0 }}
     whileInView={{opacity: 1 }}
     transition={{
